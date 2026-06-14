@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "IslandSound Bridge",
+  "version": "1.0.0",
+  "description": "Reports now-playing info from Boomplay and YouTube Music to the IslandSound macOS app for cross-app listening continuity.",
+  "permissions": ["tabs"],
+  "host_permissions": [
+    "ws://localhost:47832/*",
+    "*://www.boomplay.com/*",
+    "*://music.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["content-youtube-music.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://www.boomplay.com/*"],
+      "js": ["content-boomplay.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

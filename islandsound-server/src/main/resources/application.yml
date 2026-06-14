@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: islandsound-server
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    root: INFO
+    com.aethelis.islandsound.server: INFO

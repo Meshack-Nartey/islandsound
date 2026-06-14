@@ -1,0 +1,163 @@
+{
+  "": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSound.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSound.o",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/primary.swiftdeps"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/AppState.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppState.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppState~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppState.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppState.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AppleScriptBridge.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppleScriptBridge.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppleScriptBridge~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppleScriptBridge.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AppleScriptBridge.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AudioAnalyzer.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AudioAnalyzer.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AudioAnalyzer~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AudioAnalyzer.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/AudioAnalyzer.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/CollabEngine.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabEngine.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabEngine.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabEngine.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/LyricsEngine.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsEngine.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsEngine.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsEngine.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/MoodEngine.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodEngine.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodEngine.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodEngine.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/PlaybackEngine.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/PlaybackEngine.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/PlaybackEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/PlaybackEngine.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/PlaybackEngine.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/SystemVolume.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/SystemVolume.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/SystemVolume~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/SystemVolume.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/SystemVolume.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/VoiceEngine.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/VoiceEngine.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/VoiceEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/VoiceEngine.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/VoiceEngine.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/Color+Mood.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Color+Mood.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Color+Mood~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Color+Mood.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Color+Mood.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/View+MoodGlow.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/View+MoodGlow.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/View+MoodGlow~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/View+MoodGlow.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/View+MoodGlow.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/CollapsedView.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollapsedView.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollapsedView~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollapsedView.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollapsedView.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/ExpandedView.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/ExpandedView.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/ExpandedView~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/ExpandedView.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/ExpandedView.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/FullScreenView.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/FullScreenView.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/FullScreenView~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/FullScreenView.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/FullScreenView.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandMetrics.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandMetrics.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandMetrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandMetrics.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandMetrics.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandView.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandView.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandView~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandView.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandView.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandWindowController.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandWindowController.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandWindowController~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandWindowController.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandWindowController.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/MarqueeText.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/CollabSession.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabSession.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabSession~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabSession.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabSession.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/LyricLine.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricLine.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricLine~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricLine.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricLine.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/MoodTheme.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodTheme.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodTheme~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodTheme.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MoodTheme.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/Track.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Track.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Track~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Track.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/Track.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/BrowserBridgeServer.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/BrowserBridgeServer.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/BrowserBridgeServer~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/BrowserBridgeServer.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/BrowserBridgeServer.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/LRCLIBClient.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LRCLIBClient.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LRCLIBClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LRCLIBClient.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LRCLIBClient.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Persistence/LyricsCache.swift": {
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsCache.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsCache~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsCache.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsCache.dia"
+  }
+}

@@ -1,0 +1,11 @@
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/IslandSoundServerApplication.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/config/WebSocketConfig.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/controller/RoomRestController.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/controller/RoomStompController.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/model/Participant.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/model/ParticipantUpdate.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/model/ReactionMessage.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/model/RoomCreatedResponse.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/model/SyncMessage.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/service/RoomService.java
+/Users/m1pro/projects/islandsound/islandsound-server/src/main/java/com/aethelis/islandsound/server/service/RoomSession.java

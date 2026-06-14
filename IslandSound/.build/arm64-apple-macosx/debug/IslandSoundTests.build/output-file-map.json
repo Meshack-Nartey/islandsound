@@ -1,0 +1,54 @@
+{
+  "": {
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/primary.swiftdeps"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AppleScriptBridgeTests.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AppleScriptBridgeTests.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AppleScriptBridgeTests.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AppleScriptBridgeTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AppleScriptBridgeTests.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AppleScriptBridgeTests.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AudioAnalyzerTests.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AudioAnalyzerTests.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AudioAnalyzerTests.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AudioAnalyzerTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AudioAnalyzerTests.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/AudioAnalyzerTests.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCLIBClientTests.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCLIBClientTests.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCLIBClientTests.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCLIBClientTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCLIBClientTests.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCLIBClientTests.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCParserTests.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCParserTests.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCParserTests.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCParserTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCParserTests.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCParserTests.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LyricsCacheTests.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LyricsCacheTests.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LyricsCacheTests.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LyricsCacheTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LyricsCacheTests.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/LyricsCacheTests.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/MoodThemeTests.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/MoodThemeTests.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/MoodThemeTests.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/MoodThemeTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/MoodThemeTests.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/MoodThemeTests.dia"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/VoiceCommandTests.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/VoiceCommandTests.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/VoiceCommandTests.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/VoiceCommandTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/VoiceCommandTests.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/debug/IslandSoundTests.build/VoiceCommandTests.dia"
+  }
+}
