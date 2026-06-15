@@ -93,33 +93,32 @@ struct FullScreenView: View {
         }
     }
 
+    /// Shows only the lyric line for the current playback position -- the
+    /// active line crossfades in/out as it changes, matching the single-line
+    /// "now playing" lyric display in the native Spotify player rather than
+    /// a full scrolling list of every line.
     private var syncedLyricsView: some View {
-        ScrollViewReader { proxy in
-            ScrollView {
-                VStack(spacing: 14) {
-                    ForEach(lyricsEngine.lines) { line in
-                        Text(line.text.isEmpty ? "•" : line.text)
-                            .font(.system(size: isActive(line) ? 20 : 15, weight: isActive(line) ? .bold : .regular))
-                            .foregroundStyle(isActive(line) ? appState.moodTheme.primaryColor : .secondary.opacity(0.6))
-                            .multilineTextAlignment(.center)
-                            .id(line.id)
-                            .animation(.easeInOut(duration: 0.3), value: appState.activeLyricLine?.id)
-                    }
-                }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 60)
-            }
-            .onChange(of: appState.activeLyricLine?.id) { _, newValue in
-                guard let newValue else { return }
-                withAnimation(.easeInOut(duration: 0.3)) {
-                    proxy.scrollTo(newValue, anchor: .center)
-                }
+        ZStack {
+            if let line = appState.activeLyricLine {
+                Text(line.text.isEmpty ? "\u{2022}" : line.text)
+                    .font(.system(size: 22, weight: .bold))
+                    .foregroundStyle(appState.moodTheme.primaryColor)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 24)
+                    .id(line.id)
+                    .transition(.opacity)
+            } else if let upcoming = lyricsEngine.lines.first {
+                Text(upcoming.text.isEmpty ? "\u{2022}" : upcoming.text)
+                    .font(.system(size: 15, weight: .regular))
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 24)
+                    .id(upcoming.id)
+                    .transition(.opacity)
             }
         }
-    }
-
-    private func isActive(_ line: LyricLine) -> Bool {
-        line.id == appState.activeLyricLine?.id
+        .animation(.easeInOut(duration: 0.3), value: appState.activeLyricLine?.id)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     // MARK: - Voice status
