@@ -77,14 +77,7 @@ final class LyricsEngine: ObservableObject {
     func tick(position: Double) {
         guard !lines.isEmpty else { return }
 
-        var newIndex: Int?
-        for (index, line) in lines.enumerated() {
-            if line.timestamp <= position {
-                newIndex = index
-            } else {
-                break
-            }
-        }
+        let newIndex = LRCParser.activeIndex(in: lines, at: position)
 
         guard newIndex != activeIndex else { return }
         activeIndex = newIndex
