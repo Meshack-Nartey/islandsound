@@ -106,12 +106,6 @@
     "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandWindowController.swiftdeps",
     "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandWindowController.dia"
   },
-  "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/MarqueeText.swift": {
-    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swift.o",
-    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText~partial.swiftmodule",
-    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swiftdeps",
-    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.dia"
-  },
   "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift": {
     "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp.swift.o",
     "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp~partial.swiftmodule",

@@ -96,10 +96,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/MarqueeText.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift"
         },
         {
@@ -160,7 +156,6 @@
         "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandMetrics.swift.o",
         "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandView.swift.o",
         "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandWindowController.swift.o",
-        "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swift.o",
         "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp.swift.o",
         "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/CollabSession.swift.o",
         "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricLine.swift.o",
@@ -289,10 +284,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swift.o"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/IslandSoundApp.swift.o"
         },
         {
@@ -347,7 +338,6 @@
         "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandMetrics.swift",
         "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandView.swift",
         "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandWindowController.swift",
-        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/MarqueeText.swift",
         "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift",
         "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/CollabSession.swift",
         "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/LyricLine.swift",
@@ -636,7 +626,6 @@
       "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandMetrics.swift",
       "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandView.swift",
       "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandWindowController.swift",
-      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/MarqueeText.swift",
       "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift",
       "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/CollabSession.swift",
       "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/LyricLine.swift",
@@ -930,10 +919,6 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/MarqueeText.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift"
         },
         {
@@ -1045,10 +1030,6 @@
         {
           "kind" : "file",
           "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsEngine.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swift.o"
         },
         {
           "kind" : "file",
@@ -1173,10 +1154,6 @@
         {
           "kind" : "file",
           "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/LyricsEngine.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/arm64-apple-macosx/release/IslandSound.build/MarqueeText.swift.o"
         },
         {
           "kind" : "file",
