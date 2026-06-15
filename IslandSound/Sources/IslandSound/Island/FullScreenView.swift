@@ -1,10 +1,9 @@
 import SwiftUI
 
-/// Full overlay shown on click — karaoke lyric view, collab participant row,
-/// and live voice-control status (FEATURES 3, 4 & 5).
+/// Full overlay shown on click — collaborative listening rooms and live
+/// voice-control status (FEATURES 3 & 5).
 struct FullScreenView: View {
     @ObservedObject var appState: AppState
-    @ObservedObject var lyricsEngine: LyricsEngine
     @ObservedObject var collabEngine: CollabEngine
     @ObservedObject var voiceEngine: VoiceEngine
 
@@ -14,7 +13,6 @@ struct FullScreenView: View {
 
     init(appState: AppState) {
         self.appState = appState
-        self.lyricsEngine = appState.lyricsEngine
         self.collabEngine = appState.collabEngine
         self.voiceEngine = appState.voiceEngine
     }
@@ -23,13 +21,10 @@ struct FullScreenView: View {
         VStack(spacing: 12) {
             header
 
-            karaokeView
-
-            Spacer(minLength: 0)
+            collabContent
+                .frame(maxHeight: .infinity)
 
             voiceStatusBar
-
-            collabBar
         }
         .padding(18)
         .frame(width: IslandMetrics.fullScreenSize.width, height: IslandMetrics.fullScreenSize.height)
@@ -63,53 +58,144 @@ struct FullScreenView: View {
         }
     }
 
-    // MARK: - Karaoke lyrics
+    // MARK: - Collab room
 
     @ViewBuilder
-    private var karaokeView: some View {
-        if !lyricsEngine.lines.isEmpty {
-            syncedLyricsView
+    private var collabContent: some View {
+        if let session = appState.collabSession {
+            activeRoomView(session)
         } else {
-            VStack(spacing: 6) {
-                Spacer()
-                Image(systemName: "text.quote")
-                    .font(.system(size: 24))
-                    .foregroundStyle(.secondary)
-                Text(lyricsEngine.statusMessage)
-                    .font(.system(size: 12))
-                    .foregroundStyle(.secondary)
-                Spacer()
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            startRoomView
         }
     }
 
-    /// Shows only the lyric line for the current playback position -- the
-    /// active line crossfades in/out as it changes, matching the single-line
-    /// "now playing" lyric display in the native Spotify player rather than
-    /// a full scrolling list of every line.
-    private var syncedLyricsView: some View {
-        ZStack {
-            if let line = appState.activeLyricLine {
-                Text(line.text.isEmpty ? "\u{2022}" : line.text)
-                    .font(.system(size: 22, weight: .bold))
-                    .foregroundStyle(appState.moodTheme.primaryColor)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 24)
-                    .id(line.id)
-                    .transition(.opacity)
-            } else if let upcoming = lyricsEngine.lines.first {
-                Text(upcoming.text.isEmpty ? "\u{2022}" : upcoming.text)
-                    .font(.system(size: 15, weight: .regular))
+    /// Shown when the user isn't in a room yet — explains what a collab room
+    /// does and offers prominent "Start Room" / "Join" actions (FEATURE 3).
+    private var startRoomView: some View {
+        VStack(spacing: 14) {
+            Spacer(minLength: 0)
+
+            Image(systemName: "person.2.wave.2.fill")
+                .font(.system(size: 30))
+                .foregroundStyle(appState.moodTheme.primaryColor)
+
+            VStack(spacing: 4) {
+                Text("Listen Together")
+                    .font(.system(size: 15, weight: .semibold))
+                Text("Start a room to sync this track with friends in real time, or join one with a code.")
+                    .font(.system(size: 12))
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 24)
-                    .id(upcoming.id)
-                    .transition(.opacity)
+                    .padding(.horizontal, 36)
             }
+
+            Button {
+                Task { await collabEngine.createRoom() }
+            } label: {
+                Label("Start Room", systemImage: "play.circle.fill")
+                    .font(.system(size: 13, weight: .semibold))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 10)
+            }
+            .buttonStyle(.plain)
+            .foregroundStyle(appState.moodTheme.primaryColor)
+            .background(appState.moodTheme.primaryColor.opacity(0.16))
+            .clipShape(Capsule())
+            .padding(.horizontal, 70)
+
+            HStack(spacing: 8) {
+                TextField("Enter room code", text: $joinCode)
+                    .textFieldStyle(.plain)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 12, weight: .medium, design: .monospaced))
+                    .padding(.vertical, 10)
+                    .background(Capsule().fill(Color.white.opacity(0.06)))
+
+                Button("Join") {
+                    let code = joinCode
+                    joinCode = ""
+                    Task { await collabEngine.joinRoom(code: code) }
+                }
+                .buttonStyle(.plain)
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundStyle(isJoinDisabled ? .secondary : .primary)
+                .padding(.horizontal, 18)
+                .padding(.vertical, 10)
+                .background(Capsule().fill(Color.white.opacity(isJoinDisabled ? 0.04 : 0.1)))
+                .disabled(isJoinDisabled)
+            }
+            .padding(.horizontal, 48)
+
+            Spacer(minLength: 0)
         }
-        .animation(.easeInOut(duration: 0.3), value: appState.activeLyricLine?.id)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(maxWidth: .infinity)
+    }
+
+    private var isJoinDisabled: Bool {
+        joinCode.trimmingCharacters(in: .whitespaces).isEmpty
+    }
+
+    /// Shown once the user has created or joined a room — the room code,
+    /// roster, reactions, and a "Leave Room" action.
+    private func activeRoomView(_ session: CollabSession) -> some View {
+        VStack(spacing: 14) {
+            Spacer(minLength: 0)
+
+            Image(systemName: session.role == .host ? "crown.fill" : "person.2.fill")
+                .font(.system(size: 26))
+                .foregroundStyle(appState.moodTheme.primaryColor)
+
+            VStack(spacing: 4) {
+                Text(session.code)
+                    .font(.system(size: 30, weight: .bold, design: .monospaced))
+                    .tracking(6)
+                Text(session.role == .host ? "You're hosting — share this code" : "Listening along with the host")
+                    .font(.system(size: 12))
+                    .foregroundStyle(.secondary)
+            }
+
+            if !session.participants.isEmpty {
+                HStack(spacing: 8) {
+                    ForEach(session.participants) { participant in
+                        Text(participant.avatar)
+                            .font(.system(size: 20))
+                            .help(participant.name)
+                    }
+                }
+            }
+
+            HStack(spacing: 16) {
+                ForEach(Self.reactionEmojis, id: \.self) { emoji in
+                    Button {
+                        collabEngine.sendReaction(emoji)
+                    } label: {
+                        Text(emoji).font(.system(size: 20))
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+
+            if let reaction = session.recentReactions.last {
+                Text("\(reaction.from) reacted \(reaction.emoji)")
+                    .font(.system(size: 11))
+                    .foregroundStyle(.secondary)
+                    .transition(.opacity)
+                    .id(reaction.from + reaction.emoji + "\(session.recentReactions.count)")
+            }
+
+            Spacer(minLength: 0)
+
+            Button("Leave Room") {
+                Task { await collabEngine.leaveRoom() }
+            }
+            .buttonStyle(.plain)
+            .font(.system(size: 12, weight: .semibold))
+            .foregroundStyle(.secondary)
+            .padding(.horizontal, 24)
+            .padding(.vertical, 8)
+            .background(Capsule().fill(Color.white.opacity(0.06)))
+        }
+        .frame(maxWidth: .infinity)
     }
 
     // MARK: - Voice status
@@ -136,89 +222,6 @@ struct FullScreenView: View {
             .padding(.vertical, 6)
             .background(Capsule().fill(Color.white.opacity(0.06)))
             .transition(.opacity)
-        }
-    }
-
-    // MARK: - Collab bar
-
-    @ViewBuilder
-    private var collabBar: some View {
-        if let session = appState.collabSession {
-            VStack(spacing: 6) {
-                HStack(spacing: 10) {
-                    Image(systemName: session.role == .host ? "crown.fill" : "person.2.fill")
-                        .foregroundStyle(appState.moodTheme.primaryColor)
-                        .font(.system(size: 11))
-
-                    Text(session.code)
-                        .font(.system(size: 12, weight: .semibold, design: .monospaced))
-
-                    ForEach(session.participants) { participant in
-                        Text(participant.avatar)
-                            .font(.system(size: 14))
-                            .help(participant.name)
-                    }
-
-                    Spacer()
-
-                    if let reaction = session.recentReactions.last {
-                        Text(reaction.emoji)
-                            .font(.system(size: 16))
-                            .transition(.scale.combined(with: .opacity))
-                            .id(reaction.from + reaction.emoji + "\(session.recentReactions.count)")
-                    }
-
-                    ForEach(Self.reactionEmojis, id: \.self) { emoji in
-                        Button {
-                            collabEngine.sendReaction(emoji)
-                        } label: {
-                            Text(emoji).font(.system(size: 13))
-                        }
-                        .buttonStyle(.plain)
-                    }
-
-                    Button("Leave") {
-                        Task { await collabEngine.leaveRoom() }
-                    }
-                    .buttonStyle(.plain)
-                    .font(.system(size: 11))
-                    .foregroundStyle(.secondary)
-                }
-            }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 6)
-            .background(Capsule().fill(Color.white.opacity(0.06)))
-        } else {
-            HStack(spacing: 10) {
-                Button {
-                    Task { await collabEngine.createRoom() }
-                } label: {
-                    Label("Start Room", systemImage: "person.2.wave.2")
-                }
-                .buttonStyle(.plain)
-                .font(.system(size: 11))
-                .foregroundStyle(.secondary)
-
-                Spacer()
-
-                TextField("Room code", text: $joinCode)
-                    .textFieldStyle(.plain)
-                    .font(.system(size: 11, design: .monospaced))
-                    .frame(width: 80)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
-                    .background(Capsule().fill(Color.white.opacity(0.06)))
-
-                Button("Join") {
-                    let code = joinCode
-                    joinCode = ""
-                    Task { await collabEngine.joinRoom(code: code) }
-                }
-                .buttonStyle(.plain)
-                .font(.system(size: 11))
-                .foregroundStyle(.secondary)
-                .disabled(joinCode.trimmingCharacters(in: .whitespaces).isEmpty)
-            }
         }
     }
 }

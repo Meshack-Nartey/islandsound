@@ -11,11 +11,10 @@ enum IslandState: Equatable {
     case fullScreen
 }
 
-/// Single source of truth for the entire app. All six engines
-/// (`PlaybackEngine`, `MoodEngine`, `LyricsEngine`, `CollabEngine`,
-/// `VoiceEngine`, and the `IslandWindowController`) read and write to this
-/// shared object so the SwiftUI views stay in sync without any direct
-/// engine-to-engine coupling.
+/// Single source of truth for the entire app. All five engines
+/// (`PlaybackEngine`, `MoodEngine`, `CollabEngine`, `VoiceEngine`, and the
+/// `IslandWindowController`) read and write to this shared object so the
+/// SwiftUI views stay in sync without any direct engine-to-engine coupling.
 @MainActor
 final class AppState: ObservableObject {
     static let shared = AppState()
@@ -28,10 +27,6 @@ final class AppState: ObservableObject {
 
     // MARK: - Mood (written by MoodEngine)
     @Published var moodTheme: MoodTheme = .neutral
-
-    // MARK: - Lyrics (written by LyricsEngine)
-    @Published var activeLyricLine: LyricLine?
-    @Published var lyricsAvailable: Bool = false
 
     // MARK: - Collab (written by CollabEngine)
     @Published var collabSession: CollabSession?
@@ -47,7 +42,6 @@ final class AppState: ObservableObject {
     // MARK: - Engines
     let playbackEngine: PlaybackEngine
     let moodEngine: MoodEngine
-    let lyricsEngine: LyricsEngine
     let collabEngine: CollabEngine
     let voiceEngine: VoiceEngine
 
@@ -56,13 +50,11 @@ final class AppState: ObservableObject {
     init() {
         let playbackEngine = PlaybackEngine()
         let moodEngine = MoodEngine()
-        let lyricsEngine = LyricsEngine()
         let collabEngine = CollabEngine()
         let voiceEngine = VoiceEngine()
 
         self.playbackEngine = playbackEngine
         self.moodEngine = moodEngine
-        self.lyricsEngine = lyricsEngine
         self.collabEngine = collabEngine
         self.voiceEngine = voiceEngine
 
@@ -73,7 +65,6 @@ final class AppState: ObservableObject {
     func start() {
         playbackEngine.start(appState: self)
         moodEngine.start(appState: self)
-        lyricsEngine.start(appState: self)
         collabEngine.start(appState: self)
         voiceEngine.start(appState: self)
         // CollabEngine's WebSocket connects lazily when the user creates/joins a room.
@@ -85,38 +76,20 @@ final class AppState: ObservableObject {
     private func wireEngines() {
         playbackEngine.onTrackChanged = { [weak self] track, position, isPlaying, source in
             guard let self else { return }
-            let trackChanged = self.currentTrack?.id != track?.id
             self.currentTrack = track
             self.playbackPosition = position
             self.isPlaying = isPlaying
             self.sourceApp = source
 
             self.moodEngine.setPlaying(isPlaying)
-
-            if trackChanged {
-                self.activeLyricLine = nil
-                if let track {
-                    Task { await self.lyricsEngine.loadLyrics(for: track) }
-                } else {
-                    self.lyricsAvailable = false
-                    self.lyricsEngine.clear()
-                }
-            }
         }
 
         playbackEngine.onPositionTick = { [weak self] position in
-            guard let self else { return }
-            self.playbackPosition = position
-            self.lyricsEngine.tick(position: position)
+            self?.playbackPosition = position
         }
 
         moodEngine.onThemeChanged = { [weak self] theme in
             self?.moodTheme = theme
-        }
-
-        lyricsEngine.onActiveLineChanged = { [weak self] line, available in
-            self?.activeLyricLine = line
-            self?.lyricsAvailable = available
         }
 
         collabEngine.onSessionChanged = { [weak self] session in

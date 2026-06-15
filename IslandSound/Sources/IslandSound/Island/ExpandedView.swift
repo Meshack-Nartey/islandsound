@@ -18,16 +18,6 @@ struct ExpandedView: View {
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
                         .lineLimit(1)
-
-                    if let line = appState.activeLyricLine {
-                        Text(line.text)
-                            .font(.system(size: 12, weight: .medium))
-                            .foregroundStyle(appState.moodTheme.primaryColor)
-                            .lineLimit(1)
-                            .padding(.top, 2)
-                            .transition(.opacity)
-                            .animation(.easeInOut(duration: 0.3), value: line.id)
-                    }
                 }
 
                 Spacer(minLength: 0)
