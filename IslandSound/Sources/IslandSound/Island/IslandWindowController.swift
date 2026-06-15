@@ -16,6 +16,10 @@ final class IslandWindowController: NSObject {
     private let appState: AppState
     private var cancellables = Set<AnyCancellable>()
 
+    /// The app that was frontmost before the full-screen "drop" took key
+    /// status (so its keyboard focus can be restored once the drop closes).
+    private var previouslyActiveApp: NSRunningApplication?
+
     init(appState: AppState) {
         self.appState = appState
         super.init()
@@ -27,7 +31,7 @@ final class IslandWindowController: NSObject {
     // MARK: - Setup
 
     private func setupPanel() {
-        let panel = NSPanel(
+        let panel = IslandPanel(
             contentRect: NSRect(origin: .zero, size: IslandMetrics.collapsedSize),
             styleMask: [.borderless, .nonactivatingPanel],
             backing: .buffered,
@@ -42,7 +46,7 @@ final class IslandWindowController: NSObject {
         panel.hasShadow = false
         panel.hidesOnDeactivate = false
         panel.isMovable = false
-        panel.becomesKeyOnlyIfNeeded = true
+        panel.becomesKeyOnlyIfNeeded = false
 
         let hosting = NSHostingView(rootView: IslandView(appState: appState))
         hosting.frame = NSRect(origin: .zero, size: IslandMetrics.collapsedSize)
@@ -71,6 +75,20 @@ final class IslandWindowController: NSObject {
         // showing controls (expanded/full screen). Collapsed pill lets
         // clicks pass straight through to whatever is behind the notch.
         panel.ignoresMouseEvents = (state == .collapsed)
+
+        // The full-screen "drop" contains a text field (room code entry),
+        // which needs the panel to be key to receive keystrokes. Make it
+        // key explicitly (see `IslandPanel.canBecomeKey` below), and hand
+        // focus back to whatever app was frontmost once the drop closes.
+        if state == .fullScreen {
+            if previouslyActiveApp == nil {
+                previouslyActiveApp = NSWorkspace.shared.frontmostApplication
+            }
+            panel.makeKeyAndOrderFront(nil)
+        } else if let previousApp = previouslyActiveApp {
+            previouslyActiveApp = nil
+            previousApp.activate()
+        }
 
         if let hosting = panel.contentView as? NSHostingView<IslandView> {
             hosting.rootView = IslandView(appState: appState)
@@ -124,4 +142,13 @@ final class IslandWindowController: NSObject {
     private var targetScreen: NSScreen {
         NSScreen.screens.first { $0.safeAreaInsets.top > 0 } ?? NSScreen.main ?? NSScreen.screens[0]
     }
+}
+
+/// A borderless `NSPanel` can normally become key, but in practice a
+/// `.statusBar`-level `.nonactivatingPanel` owned by an `.accessory` app
+/// doesn't reliably do so via `makeKeyAndOrderFront` alone. Overriding
+/// `canBecomeKey` removes any ambiguity so the panel's `TextField`
+/// (room code entry) can become first responder and accept keystrokes.
+private final class IslandPanel: NSPanel {
+    override var canBecomeKey: Bool { true }
 }
