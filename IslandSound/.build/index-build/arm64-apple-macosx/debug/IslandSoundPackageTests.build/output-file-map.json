@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/runner.d",
+    "object": "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/runner.dia"
+  }
+}

@@ -1,0 +1,926 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.xctest/Contents/MacOS/IslandSoundPackageTests",
+      "packagePath" : "/Users/m1pro/projects/islandsound/IslandSound",
+      "productName" : "IslandSoundPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.IslandSound-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/sources",
+      "importPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AppleScriptBridge.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AudioAnalyzer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/CollabEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/LyricsEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/MoodEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/PlaybackEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/SystemVolume.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/VoiceEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/Color+Mood.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/View+MoodGlow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/CollapsedView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/ExpandedView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/FullScreenView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandMetrics.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/CollabSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/LyricLine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/MoodTheme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/Track.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/BrowserBridgeServer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/LRCLIBClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Persistence/LyricsCache.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "IslandSound",
+      "moduleOutputPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSound.swiftmodule",
+      "objects" : [
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/AppState.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/AppleScriptBridge.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/AudioAnalyzer.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/CollabEngine.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/LyricsEngine.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/MoodEngine.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/PlaybackEngine.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/SystemVolume.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/VoiceEngine.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/Color+Mood.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/View+MoodGlow.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/CollapsedView.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/ExpandedView.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/FullScreenView.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/IslandMetrics.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/IslandView.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/IslandWindowController.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/IslandSoundApp.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/CollabSession.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/LyricLine.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/MoodTheme.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/Track.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/BrowserBridgeServer.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/LRCLIBClient.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/LyricsCache.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "IslandSound_main",
+        "-swift-version",
+        "5",
+        "-parse-as-library",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "islandsound"
+      ],
+      "outputFileMapPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSound.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/AppState.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AppleScriptBridge.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AudioAnalyzer.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/CollabEngine.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/LyricsEngine.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/MoodEngine.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/PlaybackEngine.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/SystemVolume.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/VoiceEngine.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/Color+Mood.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/View+MoodGlow.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/CollapsedView.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/ExpandedView.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/FullScreenView.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandMetrics.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandView.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandWindowController.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/CollabSession.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/LyricLine.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/MoodTheme.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/Track.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/BrowserBridgeServer.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/LRCLIBClient.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Persistence/LyricsCache.swift"
+      ],
+      "tempsPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.IslandSoundPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/sources",
+      "importPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSoundTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "IslandSoundPackageTests",
+      "moduleOutputPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSoundPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/include/IslandSoundPackageTests-Swift.h",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "islandsound"
+      ],
+      "outputFileMapPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSoundPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.IslandSoundTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/sources",
+      "importPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AppleScriptBridgeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AudioAnalyzerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCLIBClientTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCParserTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LyricsCacheTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/MoodThemeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/VoiceCommandTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSound.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "IslandSoundTests",
+      "moduleOutputPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSoundTests.swiftmodule",
+      "objects" : [
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/AppleScriptBridgeTests.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/AudioAnalyzerTests.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCLIBClientTests.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/LRCParserTests.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/LyricsCacheTests.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/MoodThemeTests.swift.o",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/VoiceCommandTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "islandsound"
+      ],
+      "outputFileMapPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules/IslandSoundTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AppleScriptBridgeTests.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AudioAnalyzerTests.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCLIBClientTests.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCParserTests.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LyricsCacheTests.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/MoodThemeTests.swift",
+        "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/VoiceCommandTests.swift"
+      ],
+      "tempsPath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "IslandSound" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "IslandSound",
+      "-package-name",
+      "islandsound",
+      "-c",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/AppState.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AppleScriptBridge.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AudioAnalyzer.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/CollabEngine.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/LyricsEngine.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/MoodEngine.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/PlaybackEngine.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/SystemVolume.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/VoiceEngine.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/Color+Mood.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/View+MoodGlow.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/CollapsedView.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/ExpandedView.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/FullScreenView.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandMetrics.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandView.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandWindowController.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/CollabSession.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/LyricLine.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/MoodTheme.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/Track.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/BrowserBridgeServer.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/LRCLIBClient.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Persistence/LyricsCache.swift",
+      "-I",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "IslandSound_main",
+      "-swift-version",
+      "5",
+      "-parse-as-library",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "islandsound",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "IslandSoundPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "IslandSoundPackageTests",
+      "-package-name",
+      "islandsound",
+      "-c",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/include/IslandSoundPackageTests-Swift.h",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "islandsound",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "IslandSoundTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "IslandSoundTests",
+      "-package-name",
+      "islandsound",
+      "-c",
+      "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AppleScriptBridgeTests.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AudioAnalyzerTests.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCLIBClientTests.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCParserTests.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LyricsCacheTests.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/MoodThemeTests.swift",
+      "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/VoiceCommandTests.swift",
+      "-I",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "islandsound",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "IslandSound" : [
+
+    ],
+    "IslandSoundPackageTests" : [
+      "IslandSoundTests",
+      "IslandSound"
+    ],
+    "IslandSoundTests" : [
+      "IslandSound"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AppleScriptBridge.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/AudioAnalyzer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/CollabEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/LyricsEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/MoodEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/PlaybackEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/SystemVolume.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Engines/VoiceEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/Color+Mood.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Extensions/View+MoodGlow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/CollapsedView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/ExpandedView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/FullScreenView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandMetrics.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Island/IslandWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/IslandSoundApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/CollabSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/LyricLine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/MoodTheme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Models/Track.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/BrowserBridgeServer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Networking/LRCLIBClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Sources/IslandSound/Persistence/LyricsCache.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSound.build/sources"
+    },
+    "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundPackageTests.build/sources"
+    },
+    "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AppleScriptBridgeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/AudioAnalyzerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCLIBClientTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LRCParserTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/LyricsCacheTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/MoodThemeTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/m1pro/projects/islandsound/IslandSound/Tests/IslandSoundTests/VoiceCommandTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/IslandSoundTests.build/sources"
+    },
+    "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/m1pro/projects/islandsound/IslandSound/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

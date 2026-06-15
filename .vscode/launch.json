@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:islandsound}/IslandSound",
+            "name": "Debug IslandSound (IslandSound)",
+            "target": "IslandSound",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug IslandSound (IslandSound)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:islandsound}/IslandSound",
+            "name": "Release IslandSound (IslandSound)",
+            "target": "IslandSound",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release IslandSound (IslandSound)"
+        }
+    ]
+}

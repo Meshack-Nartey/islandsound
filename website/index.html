@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IslandSound — A mood-reactive music companion for your Mac</title>
+  <meta name="description" content="IslandSound turns your Mac's notch into a mood-reactive, cross-app, collaborative, voice-controlled now-playing companion." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">IslandSound</div>
+    <a class="nav-link" href="https://github.com/Meshack-Nartey/islandsound" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Your menu bar,<br /><span class="grad-text">alive with music</span></h1>
+    <p class="hero-sub">
+      A native macOS Dynamic-Island companion that changes colour with the music,
+      follows you between apps, stays in sync with friends, and listens for
+      &ldquo;Hey&nbsp;Island&rdquo;.
+    </p>
+    <div class="hero-cta">
+      <a href="#features" class="btn btn-primary">Explore features</a>
+      <a href="https://github.com/Meshack-Nartey/islandsound" class="btn btn-ghost" target="_blank" rel="noopener">View source</a>
+    </div>
+
+    <div class="demo">
+      <div class="island" id="island">
+        <div class="layer layer-collapsed">
+          <div class="art"></div>
+          <div class="grow"></div>
+          <div class="wave"><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="layer layer-expanded">
+          <div class="expanded-top">
+            <div class="art big"></div>
+            <div class="meta">
+              <div class="title">Glory and Honour</div>
+              <div class="artist">Dunsin Oyekan</div>
+            </div>
+            <div class="icon-btn">⇄</div>
+          </div>
+          <div class="progress"><div class="progress-fill"></div></div>
+          <div class="transport">
+            <span class="icon-btn">⏮</span>
+            <span class="icon-btn play">⏸</span>
+            <span class="icon-btn">⏭</span>
+          </div>
+        </div>
+
+        <div class="layer layer-fullscreen">
+          <div class="fs-header">
+            <div class="meta">
+              <div class="title">Glory and Honour</div>
+              <div class="artist">Dunsin Oyekan</div>
+            </div>
+            <div class="icon-btn">⌃</div>
+          </div>
+          <div class="collab">
+            <div class="collab-icon">👥</div>
+            <div class="collab-title">Listen Together</div>
+            <div class="collab-desc">Start a room to sync this track with friends in real time, or join one with a code.</div>
+            <div class="collab-start">▶ Start Room</div>
+            <div class="collab-join">
+              <span class="join-field">Enter room code</span>
+              <span class="join-btn">Join</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="demo-hint">Hover to expand &middot; click to open the full drop</p>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <h2>Four features. Zero clutter.</h2>
+    <div class="feature-grid">
+      <article class="card card-mood">
+        <div class="card-orb"></div>
+        <h3>Mood-Based Dynamic Theming</h3>
+        <p>The glow shifts in real time with the music — electric indigo for high energy, warm gold for worship, soft amber when things calm down. All computed on-device with FFT, no internet required.</p>
+      </article>
+      <article class="card card-handoff">
+        <div class="card-orb"></div>
+        <h3>Cross-App Listening Continuity</h3>
+        <p>Hand a track off between Apple Music, Spotify, Boomplay and YouTube Music — same song, same position, different app.</p>
+      </article>
+      <article class="card card-collab">
+        <div class="card-orb"></div>
+        <h3>Listen Together</h3>
+        <p>Start or join a room with a six-character code and stay perfectly in sync with friends — playback, reactions and all.</p>
+      </article>
+      <article class="card card-voice">
+        <div class="card-orb"></div>
+        <h3>&ldquo;Hey Island&rdquo; Voice Control</h3>
+        <p>Skip, pause, change the volume, or ask &ldquo;who sings this?&rdquo; — hands-free, on-device, with ShazamKit-powered song ID.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="screenshots">
+    <h2>The real thing</h2>
+    <div class="shot-grid">
+      <figure class="shot shot-wide">
+        <div class="shot-media shot-collapsed">
+          <img src="images/screenshot-collapsed.png" alt="IslandSound collapsed into a pill with album art on the left and a live waveform on the right, glowing violet to rose" loading="lazy" />
+        </div>
+        <figcaption>Collapsed &mdash; just art and a live signal</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot-media shot-expanded">
+          <img src="images/screenshot-expanded.png" alt="IslandSound expanded on hover, showing track info, a progress bar and transport controls, glowing warm gold for a worship track" loading="lazy" />
+        </div>
+        <figcaption>Expanded on hover &mdash; now playing, tinted for the mood</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot-media shot-fs-start">
+          <img src="images/screenshot-fullscreen-start.png" alt="Full-screen Listen Together panel with a Start Room button and a join-by-code field" loading="lazy" />
+        </div>
+        <figcaption>The full drop &mdash; start or join a room</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot-media shot-fs-room">
+          <img src="images/screenshot-fullscreen-room.png" alt="An active Listen Together room showing a room code, host crown and reaction emoji" loading="lazy" />
+        </div>
+        <figcaption>In a room &mdash; code, reactions, live sync</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="moods">
+    <h2>One island. Every mood.</h2>
+    <div class="mood-strip">
+      <div class="mood-swatch">
+        <div class="swatch-bar swatch-high"></div>
+        <span class="swatch-label">High Energy</span>
+        <span class="swatch-sub">&gt;120 BPM</span>
+      </div>
+      <div class="mood-swatch">
+        <div class="swatch-bar swatch-mid"></div>
+        <span class="swatch-label">Mid Energy</span>
+        <span class="swatch-sub">80&ndash;120 BPM</span>
+      </div>
+      <div class="mood-swatch">
+        <div class="swatch-bar swatch-calm"></div>
+        <span class="swatch-label">Calm</span>
+        <span class="swatch-sub">&lt;80 BPM</span>
+      </div>
+      <div class="mood-swatch">
+        <div class="swatch-bar swatch-worship"></div>
+        <span class="swatch-label">Worship</span>
+        <span class="swatch-sub">Warm &amp; slow</span>
+      </div>
+      <div class="mood-swatch">
+        <div class="swatch-bar swatch-neutral"></div>
+        <span class="swatch-label">Neutral</span>
+        <span class="swatch-sub">Paused</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built natively with Swift &amp; SwiftUI. No accounts, no ads, no tracking.</p>
+    <a href="https://github.com/Meshack-Nartey/islandsound" target="_blank" rel="noopener">github.com/Meshack-Nartey/islandsound</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
