@@ -12,10 +12,10 @@ import Foundation
 final class LyricsEngine: ObservableObject {
     /// All parsed lines for the current track, sorted by timestamp. For
     /// tracks with real LRC timing this is exact; for tracks where LRCLIB
-    /// only has unsynced ("plain") lyrics, timestamps are approximated by
-    /// evenly spacing each line across the track's duration (see
-    /// `approximateLines`), so the single-line karaoke view still progresses
-    /// line-by-line.
+    /// only has unsynced ("plain") lyrics, timestamps are approximated at a
+    /// believable per-line pace, cycling the transcript if needed to cover
+    /// the track's duration (see `approximateLines`), so the single-line
+    /// karaoke view still progresses line-by-line.
     @Published var lines: [LyricLine] = []
 
     /// Human-readable status shown in the karaoke view while `lines` is empty
@@ -117,11 +117,17 @@ final class LyricsEngine: ObservableObject {
         }
     }
 
-    /// Approximates per-line timestamps for unsynced ("plain") lyrics by
-    /// evenly spacing each non-empty line across the track's `duration`, so
-    /// the single-line karaoke view can still progress line-by-line even
-    /// without real LRC timing data. Falls back to 3 seconds per line if
-    /// `duration` is unknown.
+    /// Approximates per-line timestamps for unsynced ("plain") lyrics so the
+    /// single-line karaoke view can still progress line-by-line without real
+    /// LRC timing data.
+    ///
+    /// Evenly dividing `duration` by the line count breaks down for live
+    /// recordings, where LRCLIB's transcript is often just one short cycle of
+    /// a chorus that's actually repeated for many minutes -- that division
+    /// can yield 30+ seconds per line, far slower than anyone actually sings
+    /// a line. Instead, each line is shown for a duration clamped to a
+    /// believable 2-6s range, and the transcript cycles (repeats) until
+    /// `duration` is covered.
     private static func approximateLines(from plain: String, duration: Double) -> [LyricLine] {
         let textLines = plain
             .split(separator: "\n", omittingEmptySubsequences: false)
@@ -130,9 +136,21 @@ final class LyricsEngine: ObservableObject {
 
         guard !textLines.isEmpty else { return [] }
 
-        let segment = duration > 0 ? duration / Double(textLines.count) : 3.0
-        return textLines.enumerated().map { index, text in
-            LyricLine(timestamp: Double(index) * segment, text: text)
+        let rawPace = duration > 0 ? duration / Double(textLines.count) : 4.0
+        let pace = min(max(rawPace, 2.0), 6.0)
+
+        guard duration > 0 else {
+            return textLines.enumerated().map { LyricLine(timestamp: Double($0.offset) * pace, text: $0.element) }
         }
+
+        var result: [LyricLine] = []
+        var timestamp: Double = 0
+        var index = 0
+        while timestamp < duration {
+            result.append(LyricLine(timestamp: timestamp, text: textLines[index % textLines.count]))
+            timestamp += pace
+            index += 1
+        }
+        return result
     }
 }
