@@ -10,14 +10,13 @@ import Foundation
 /// `onActiveLineChanged`.
 @MainActor
 final class LyricsEngine: ObservableObject {
-    /// All parsed lines for the current track, sorted by timestamp.
+    /// All parsed lines for the current track, sorted by timestamp. For
+    /// tracks with real LRC timing this is exact; for tracks where LRCLIB
+    /// only has unsynced ("plain") lyrics, timestamps are approximated by
+    /// evenly spacing each line across the track's duration (see
+    /// `approximateLines`), so the single-line karaoke view still progresses
+    /// line-by-line.
     @Published var lines: [LyricLine] = []
-
-    /// Unsynced lyrics text, shown as a static block when LRCLIB has no
-    /// time-synced (LRC) lyrics for the track but does have plain lyrics
-    /// (common for live recordings). `nil` when `lines` is non-empty or no
-    /// lyrics of any kind were found.
-    @Published var plainLyrics: String?
 
     /// Human-readable status shown in the karaoke view while `lines` is empty
     /// (e.g. "Loading lyrics…", "No lyrics found").
@@ -43,7 +42,6 @@ final class LyricsEngine: ObservableObject {
         currentTrackId = track.id
         activeIndex = nil
         lines = []
-        plainLyrics = nil
         statusMessage = "Loading lyrics\u{2026}"
         onActiveLineChanged?(nil, false)
 
@@ -63,9 +61,9 @@ final class LyricsEngine: ObservableObject {
             await cache.store(trackId: track.id, raw: synced, source: .lrclib)
             applyParsedLyrics(synced, for: track.id)
         } else if let plain = result.plain, !plain.isEmpty {
-            plainLyrics = plain
-            statusMessage = ""
-            onActiveLineChanged?(nil, true)
+            lines = Self.approximateLines(from: plain, duration: track.duration)
+            statusMessage = lines.isEmpty ? "No lyrics found" : ""
+            onActiveLineChanged?(nil, !lines.isEmpty)
         } else {
             statusMessage = "No lyrics found"
         }
@@ -89,7 +87,6 @@ final class LyricsEngine: ObservableObject {
     func clear() {
         currentTrackId = nil
         lines = []
-        plainLyrics = nil
         activeIndex = nil
         statusMessage = "No lyrics"
         onActiveLineChanged?(nil, false)
@@ -109,7 +106,6 @@ final class LyricsEngine: ObservableObject {
 
         let parsed = LRCParser.parse(raw)
         lines = parsed
-        plainLyrics = nil
         activeIndex = nil
 
         if parsed.isEmpty {
@@ -118,6 +114,25 @@ final class LyricsEngine: ObservableObject {
         } else {
             statusMessage = ""
             onActiveLineChanged?(nil, true)
+        }
+    }
+
+    /// Approximates per-line timestamps for unsynced ("plain") lyrics by
+    /// evenly spacing each non-empty line across the track's `duration`, so
+    /// the single-line karaoke view can still progress line-by-line even
+    /// without real LRC timing data. Falls back to 3 seconds per line if
+    /// `duration` is unknown.
+    private static func approximateLines(from plain: String, duration: Double) -> [LyricLine] {
+        let textLines = plain
+            .split(separator: "\n", omittingEmptySubsequences: false)
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+
+        guard !textLines.isEmpty else { return [] }
+
+        let segment = duration > 0 ? duration / Double(textLines.count) : 3.0
+        return textLines.enumerated().map { index, text in
+            LyricLine(timestamp: Double(index) * segment, text: text)
         }
     }
 }

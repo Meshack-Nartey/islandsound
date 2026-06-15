@@ -69,15 +69,6 @@ struct FullScreenView: View {
     private var karaokeView: some View {
         if !lyricsEngine.lines.isEmpty {
             syncedLyricsView
-        } else if let plain = lyricsEngine.plainLyrics {
-            ScrollView {
-                Text(plain)
-                    .font(.system(size: 13))
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 30)
-            }
         } else {
             VStack(spacing: 6) {
                 Spacer()
