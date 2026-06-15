@@ -107,28 +107,32 @@ struct ExpandedView: View {
     }
 
     private var transportControls: some View {
-        HStack(spacing: 20) {
-            Button { appState.playbackEngine.previous() } label: {
-                Image(systemName: "backward.fill")
+        ZStack {
+            HStack(spacing: 20) {
+                Button { appState.playbackEngine.previous() } label: {
+                    Image(systemName: "backward.fill")
+                }
+                Button {
+                    appState.isPlaying ? appState.playbackEngine.pause() : appState.playbackEngine.play()
+                } label: {
+                    Image(systemName: appState.isPlaying ? "pause.fill" : "play.fill")
+                        .font(.system(size: 14))
+                }
+                Button { appState.playbackEngine.next() } label: {
+                    Image(systemName: "forward.fill")
+                }
             }
-            Button {
-                appState.isPlaying ? appState.playbackEngine.pause() : appState.playbackEngine.play()
-            } label: {
-                Image(systemName: appState.isPlaying ? "pause.fill" : "play.fill")
-                    .font(.system(size: 14))
-            }
-            Button { appState.playbackEngine.next() } label: {
-                Image(systemName: "forward.fill")
-            }
+            .frame(maxWidth: .infinity)
 
-            Spacer()
-
-            Button {
-                Task { await appState.collabEngine.createRoom() }
-            } label: {
-                Image(systemName: "person.2.wave.2")
+            HStack {
+                Spacer()
+                Button {
+                    Task { await appState.collabEngine.createRoom() }
+                } label: {
+                    Image(systemName: "person.2.wave.2")
+                }
+                .help("Start a collab room")
             }
-            .help("Start a collab room")
         }
         .buttonStyle(.plain)
         .font(.system(size: 12))
